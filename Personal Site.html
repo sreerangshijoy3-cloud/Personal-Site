@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreerang Shijoy | Portfolio</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #6366f1;
+            --dark: #1f2937;
+            --light: #f3f4f6;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+        }
+
+        header {
+            background: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-weight: bold; font-size: 1.5rem; color: var(--primary); }
+
+        nav a { margin-left: 1rem; text-decoration: none; color: var(--dark); font-weight: 500; }
+
+        section { padding: 4rem 10%; }
+
+        .hero { text-align: center; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 6rem 10%; }
+
+        .card-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+
+        .card { background: var(--white); padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+
+        .skill-tag { display: inline-block; background: var(--light); padding: 0.3rem 0.8rem; border-radius: 20px; margin: 0.3rem; font-size: 0.9rem; }
+        
+        footer { text-align: center; padding: 2rem; background: var(--dark); color: white; }
+        
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Sreerang Shijoy</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Sreerang Shijoy</h1>
+        <p>Student | Aspiring Developer from Kerala</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I’m Sreerang Shijoy. I enjoy building simple websites and exploring how apps work. I’m currently learning web development and improving my skills step by step. I like solving problems, experimenting with new ideas, and creating things that can be useful in real life.</p>
+    </section>
+
+    <section id="skills" style="background: var(--white);">
+        <h2>Skills & Interests</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Technical Skills</h3>
+                <span class="skill-tag">HTML</span> <span class="skill-tag">CSS</span> 
+                <span class="skill-tag">JavaScript</span> <span class="skill-tag">Problem Solving</span>
+            </div>
+            <div class="card">
+                <h3>Interests</h3>
+                <p>Coding, App Development, Exploring creative ideas and learning new skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Personal Website</h3>
+                <p>A simple website built using HTML and CSS to showcase my profile and skills.</p>
+            </div>
+            <div class="card">
+                <h3>SurviveSense</h3>
+                <p>An offline safety app concept designed to help people during travel or emergencies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background: var(--white);">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sreerangshijoy3@gmail.com">sreerangshijoy3@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/sreerangshijoy3-cloud" target="_blank">View my profile</a></p>
+    </section>
+
+    <footer>
+        &copy; 2026 Sreerang Shijoy. Built with passion.
+    </footer>
+
+    <script>
+        console.log("Welcome to Sreerang's Portfolio!");
+    </script>
+</body>
